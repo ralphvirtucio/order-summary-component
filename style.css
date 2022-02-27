@@ -11,7 +11,8 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: top;
 }
 
 .container {
@@ -21,9 +22,9 @@ body {
 }
 
 .card-container {
+  max-width: 25rem;
   background-color: #fff;
   border-radius: 10px;
-  max-width: 25rem;
 }
 
 .header-image {
@@ -45,6 +46,7 @@ body {
 .card-heading {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
+  font-size: 1.5rem;
 }
 
 .card-description {
