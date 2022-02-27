@@ -96,6 +96,7 @@ body {
 }
 .change-option:active,
 .change-option:hover {
+  color: hsla(245, 75%, 52%, 0.6);
 }
 
 .btn {
@@ -109,14 +110,21 @@ body {
 .btn--proceed-payment {
   background-color: hsl(245, 75%, 52%);
   color: #fff;
-  font-weight: 700;
+  font-weight: 900;
   font-family: 'Red Hat Display', sans-serif;
   box-shadow: 0 0.8rem 1rem rgba(56, 41, 224, 0.1);
+}
+
+.btn--proceed-payment:hover {
+  background-color: hsla(245, 75%, 52%, 0.6);
 }
 
 .btn--cancel {
   color: hsl(224, 23%, 55%);
   background-color: #fff;
-  font-weight: 700;
+  font-weight: 900;
   font-family: 'Red Hat Display', sans-serif;
+}
+.btn--cancel:hover {
+  color: hsl(223, 47%, 23%);
 }
