@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  max-width: 25rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card-heading {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.card-pricing-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 8px;
+}
+
+.pricing-plan {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.music-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.pricing-name {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.change-option {
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.change-option:link,
+.change-option:visited {
+  color: hsl(245, 75%, 52%);
+}
+.change-option:active,
+.change-option:hover {
+  color: hsla(245, 75%, 52%, 0.6);
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 9px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.btn--proceed-payment {
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  font-weight: 900;
+  font-family: 'Red Hat Display', sans-serif;
+  box-shadow: 0 0.8rem 1rem rgba(56, 41, 224, 0.1);
+}
+
+.btn--proceed-payment:hover {
+  background-color: hsla(245, 75%, 52%, 0.6);
+}
+
+.btn--cancel {
+  color: hsl(224, 23%, 55%);
+  background-color: #fff;
+  font-weight: 900;
+  font-family: 'Red Hat Display', sans-serif;
+}
+.btn--cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
