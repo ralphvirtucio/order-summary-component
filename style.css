@@ -54,6 +54,7 @@ body {
   text-align: center;
   color: hsl(224, 23%, 55%);
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .card-pricing-plan {
@@ -63,6 +64,7 @@ body {
   padding: 1rem;
   background-color: hsl(225, 100%, 98%);
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .pricing-plan {
