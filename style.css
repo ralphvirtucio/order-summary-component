@@ -17,13 +17,13 @@ body {
 .container {
   display: grid;
   place-items: center;
-  max-width: 25rem;
   min-height: 100vh;
 }
 
 .card-container {
   background-color: #fff;
   border-radius: 10px;
+  max-width: 25rem;
 }
 
 .header-image {
