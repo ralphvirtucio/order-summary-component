@@ -1,0 +1,35 @@
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  display: grid;
+  place-items: center;
+  background-image: url('../images/pattern-background-mobile.svg'),
+    linear-gradient(to top, var(--primary-1), var(--neutral-1));
+
+  background-size: cover;
+}
+
+.order {
+  border-radius: 18px;
+  overflow: hidden;
+  &__content {
+    background-color: #fff;
+    padding: 2rem;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__pricing {
+    display: flex;
+    align-items: center;
+
+    &-details {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+      margin-right: auto;
+    }
+  }
+}

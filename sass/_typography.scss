@@ -1,0 +1,17 @@
+.heading {
+  font-weight: 900;
+  color: var(--neutral-3);
+
+  &--main {
+    margin-bottom: 1rem;
+  }
+
+  &--sub {
+    font-size: 1rem;
+  }
+}
+
+.order__text {
+  line-height: 1.5;
+  color: var(--neutral-2);
+}
