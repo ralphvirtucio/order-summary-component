@@ -126,9 +126,9 @@ body {
 .order__pricing {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 1.25rem 1rem;
   margin-bottom: 2rem;
-  background-color: var(--neutral-1);
+  background-color: rgba(114, 128, 167, 0.05);
   border-radius: 18px;
 }
 .order__pricing-details {
@@ -162,7 +162,7 @@ body {
   background-color: var(--primary-2);
   color: #fff;
   font-weight: 700;
-  box-shadow: 0 10px 15px rgba(56, 41, 224, 0.1);
+  box-shadow: 0 10px 12px rgba(56, 41, 224, 0.1);
 }
 .btn--cancel {
   background-color: #fff;
