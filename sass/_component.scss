@@ -6,11 +6,31 @@ body {
     linear-gradient(to top, var(--primary-1), var(--neutral-1));
 
   background-size: cover;
+
+  @media only screen and (min-width: 1440px) {
+    background-image: url('../images/pattern-background-desktop.svg'),
+      linear-gradient(to top, var(--primary-1), var(--primary-1));
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .order {
   overflow: hidden;
+  border-radius: 18px;
   padding: 1rem;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.075);
+
+  @media only screen and (min-width: 1025px) {
+    max-width: 45%;
+    padding: 0;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 23%;
+    padding: 0;
+  }
 
   &__photo {
     width: 100%;
@@ -23,12 +43,28 @@ body {
     padding: 1.25rem;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
+
+    @media only screen and (min-width: 1025px) {
+      padding: 1.25rem 2rem;
+    }
+
+    @media only screen and (min-width: 1440px) {
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__description {
     text-align: center;
     margin-bottom: 2rem;
     padding: 1rem;
+
+    @media only screen and (min-width: 1025px) {
+      margin-bottom: 1rem;
+    }
+
+    @media only screen and (min-width: 1440px) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__pricing {
@@ -46,9 +82,16 @@ body {
       margin-right: auto;
     }
 
-    a {
+    a:link,
+    a:active,
+    a:visited {
       color: var(--primary-2);
       font-weight: 700;
+      transition: all 0.2s;
+
+      &:hover {
+        color: rgba(56, 41, 224, 0.65);
+      }
     }
   }
 
@@ -69,16 +112,28 @@ body {
   border-radius: 10px;
   padding: 1rem 0;
   font-family: 'Red Hat Display', sans-serif;
+  cursor: pointer;
 
   &--payment {
     background-color: var(--primary-2);
     color: #fff;
     font-weight: 700;
-    box-shadow: 0 10px 12px rgba(56, 41, 224, 0.1);
+    box-shadow: 0 10px 12px rgba(56, 41, 224, 0.15);
+
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: rgba(56, 41, 224, 0.65);
+    }
   }
   &--cancel {
     background-color: #fff;
     color: var(--neutral-2);
     font-weight: 700;
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--neutral-3);
+    }
   }
 }
